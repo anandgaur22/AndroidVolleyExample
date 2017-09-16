@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/petrol_pump_card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/petrol_pump_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Petroleum"
+            android:layout_margin="1dp"
+            android:textSize="16sp"
+            android:textColor="#101010" />
+
+        <TextView
+            android:id="@+id/petrol_pump_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/petrol_pump_name"
+            android:layout_margin="1dp"
+            android:text="Plot No-PP1 Sec-63 Noida-201301"
+            android:textColor="#ed9734"/>
+        <LinearLayout
+            android:id="@+id/llss"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/petrol_pump_address">
+            <TextView
+                android:id="@+id/petrol_pump_distance"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:layout_marginRight="2dp"
+                android:layout_height="wrap_content"
+                android:text="1.6km"
+                android:textColor="#8f4804"
+                />
+            <TextView
+                android:id="@+id/AwayTV"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="2dp"
+                android:layout_height="wrap_content"
+                android:text="Away"
+                android:textColor="#0b0b0b"
+                />
+
+
+            <TextView
+                android:id="@+id/NearestTV"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:text="Nearest"
+                android:textColor="#04490f"
+               />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llqq"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/llss"
+            android:layout_margin="1dp">
+            <TextView
+                android:id="@+id/PetroPriceTV"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Petrol"
+                android:gravity="center"
+                android:textColor="#1cca1f" />
+
+            <TextView
+                android:id="@+id/DieselPriceTV"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:text="Diesel"
+                android:textColor="#1cca1f" />
+
+        </LinearLayout>
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_below="@+id/llqq"
+           android:layout_margin="1dp"
+           android:orientation="horizontal">
+           <TextView
+               android:id="@+id/petrol_pump_dieselprice"
+               android:layout_width="0dp"
+               android:layout_weight="1"
+               android:gravity="center"
+               android:layout_height="wrap_content"
+               android:text="57.710000"
+               android:textColor="#0e0e0e" />
+
+           <TextView
+               android:id="@+id/petrol_pump_prtrolprice"
+               android:layout_width="0dp"
+               android:layout_weight="1"
+               android:gravity="center"
+               android:layout_height="wrap_content"
+               android:text="0000"
+               android:textColor="#0f0f10" />
+       </LinearLayout>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
